@@ -4,7 +4,6 @@ Understanding the Linux File System Hierarchy
 ![linux-file-system-hierarchy-1](https://github.com/user-attachments/assets/d400582d-e407-48d5-918c-4bb86efd0243)
 
 
-
 🔁 Root Directory (/)
 ഇത് ഏറ്റവും മേലായ ഡയറക്ടറി (parent). എല്ലാ ഫയലുകളും, ഫോൾഡറുകളും ഇതിൽ നിന്നാണ് തുടങ്ങുന്നത്.
 
@@ -128,3 +127,58 @@ Program files, libraries, documentation
 /var/mail – mail spool
 
 /var/spool – printer queues
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Classifcation of directory
+
+🗂 1. System Directories
+These are essential for the system to boot and operate properly.
+
+Directory	Purpose
+/	Root of the filesystem
+/boot	Boot loader and kernel files
+/sbin	System binaries for admin tasks
+/lib	Shared libraries for system programs
+/lib64	64-bit libraries
+
+👤 2. User Directories
+Used to store user data and personal settings.
+
+Directory	Purpose
+/home	User home folders (e.g., /home/john)
+/root	Home directory of the root (admin) user
+/usr	Secondary hierarchy for user applications and tools
+/usr/local	Locally compiled or installed software
+
+⚙️ 3. Configuration Directories
+Stores system-wide configuration files.
+
+Directory	Purpose
+/etc	Configuration files (e.g., networking, users, services)
+
+🔧 4. Device & Process Directories
+Represents devices and running system information.
+
+Directory	Purpose
+/dev	Device files (e.g., disks, USB, terminal)
+/proc	Virtual filesystem with process and system info
+/sys	System information related to devices and kernel
+
+📁 5. Temporary & Runtime Directories
+Used for temporary or runtime-generated data.
+
+Directory	Purpose
+/tmp	Temporary files; deleted after reboot
+/run	Runtime data like process IDs
+/var	Variable files: logs, cache, spool, lock files
+
+💽 6. Mount Point Directories
+Used to mount external and additional filesystems.
+
+Directory	Purpose
+/mnt	Temporary mount point for sysadmin use
+/media	Auto-mounted removable media (USB, CD-ROM)
+
+📦 7. Optional & Service-Specific Directories
+Directory	Purpose
+/opt	Optional third-party software packages
+/srv	Data for system services (e.g., web, FTP)
