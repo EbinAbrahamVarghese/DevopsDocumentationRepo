@@ -225,7 +225,92 @@ Used to mount external and additional filesystems.
 | `/srv`    | Data for system services (e.g., web, FTP) |
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Linux ഫയൽ സിസ്റ്റങ്ങൾ (Linux File Systems) എന്നത് ഡാറ്റ ഡിസ്‌കിൽ എങ്ങനെ സംഭരിക്കണം, സംഘടിപ്പിക്കണം, ആക്സസ് ചെയ്യണം തുടങ്ങിയ രീതികൾ നിശ്ചയിക്കുന്ന രീതിയാണ്. Linux-ൽ പല തരത്തിലുള്ള ഫയൽ സിസ്റ്റങ്ങൾ ഉണ്ട്, അവയിൽ ചിലത് വളരെ പ്രസിദ്ധമായവയാണ്: ext, ext2, ext3, ext4, Btrfs, XFS, ZFS തുടങ്ങിയവ.
+
+ഇനിപ്പറയുന്നത് പ്രധാനമായ Linux File System Types ആണ്:
 
 
+🔹 1. ext (Extended File System)
+
+ആദ്യമായിട്ടുള്ള Linux-നെ ആശ്രയിച്ച ഫയൽ സിസ്റ്റം.
+
+1992-ൽ പുറത്തിറങ്ങി.
+
+ഇപ്പോൾ ഉപയോഗിക്കാറില്ല.
+
+🔹 2. ext2 (Second Extended Filesystem)
+
+Journaling ഇല്ല.
+
+Still used in USB drives and memory cards (വളരെ ലളിതമായതിനാൽ).
+
+Max File Size: 2TB
+
+🔹 3. ext3 (Third Extended Filesystem)
+
+ext2-യുടെ മെച്ചപ്പെടുത്തിയ പതിപ്പ്.
+
+Journaling Support ഉണ്ട് → Crash-നു ശേഷം recovery എളുപ്പം.
+
+ext2-ൽ നിന്ന് ext3-ലേക്ക് convert ചെയ്യാൻ കഴിയുന്നു.
+
+🔹 4. ext4 (Fourth Extended Filesystem)
+
+✅ ഏറ്റവും കൂടുതൽ ഉപയോഗിക്കുന്നത്.
+
+Journaling + Performance boost
+
+Max File Size: 16TB
+
+Max Volume Size: 1EB (Exabyte)
+
+Delayed allocation, extents support, faster fsck
+
+🔹 5. XFS
+
+High-performance journaling file system.
+
+Mainly used in Red Hat, CentOS.
+
+Very good for large files & enterprise-level use.
+
+Used in servers and NAS systems.
+
+🔹 6. Btrfs (B-tree File System)
+
+Advanced Linux file system with snapshotting, compression, and RAID support.
+
+Designed as a replacement for ext4.
+
+Suitable for modern storage needs.
+
+🔹 7. ZFS
+
+Originally from Sun Microsystems (used in Solaris).
+
+Supports snapshotting, deduplication, volume management.
+
+Not built into the Linux kernel by default (needs external modules).
+
+🔹 8. F2FS (Flash-Friendly File System)
+
+Designed by Samsung for NAND flash storage (e.g., SSDs).
+
+Very efficient for mobile and embedded devices.
+
+
+✅ Summary Table
+
+
+| File System | Journaling | Max File Size   | Use Case                |
+| ----------- | ---------- | --------------- | ----------------------- |
+| ext2        | ❌          | 2 TB            | Simple, small devices   |
+| ext3        | ✅          | 2 TB            | Basic journaling        |
+| ext4        | ✅          | 16 TB           | Default modern Linux FS |
+| XFS         | ✅          | 8 EB            | Servers, large data     |
+| Btrfs       | ✅          | 16 EB           | Advanced features       |
+| ZFS         | ✅          | 16 EB+          | Enterprise systems      |
+| F2FS        | ✅          | Device-specific | Flash drives, mobile    |
 
 
