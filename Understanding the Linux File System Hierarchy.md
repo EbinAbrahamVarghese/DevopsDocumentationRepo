@@ -131,6 +131,7 @@ Program files, libraries, documentation
 Classifcation of directory
 
 🗂 1. System Directories
+
 These are essential for the system to boot and operate properly.
 
 | Directory | Purpose                              |
@@ -143,6 +144,7 @@ These are essential for the system to boot and operate properly.
 
 
 👤 2. User Directories
+
 Used to store user data and personal settings.
 
 | Directory    | Purpose                                             |
@@ -154,6 +156,7 @@ Used to store user data and personal settings.
 
 
 ⚙️ 3. Configuration Directories
+
 Stores system-wide configuration files.
 
 
@@ -162,6 +165,7 @@ Stores system-wide configuration files.
 | `/etc`    | Configuration files (e.g., networking, users, services) |
 
 🔧 4. Device & Process Directories
+
 Represents devices and running system information.
 
 | Directory | Purpose                                          |
@@ -172,6 +176,7 @@ Represents devices and running system information.
 
 
 📁 5. Temporary & Runtime Directories
+
 Used for temporary or runtime-generated data.
 
 | Directory | Purpose                                        |
@@ -182,6 +187,7 @@ Used for temporary or runtime-generated data.
 
 
 💽 6. Mount Point Directories
+
 Used to mount external and additional filesystems.
 
 | Directory | Purpose                                    |
