@@ -161,6 +161,12 @@ console.log("Hello World");
 
     python script.py
 
+![Difference between compiler and interpreter](https://github.com/user-attachments/assets/d19f5cac-0cfa-44e3-8b37-f52777df3abf)
+
+
+
+    
+
 🧠 4. കർണൽ (Kernel)
 
 പരിഭാഷ: ഓപ്പറേറ്റിംഗ് സിസ്റ്റത്തിന്റെ ഹൃദയം
