@@ -288,13 +288,35 @@ XNU Kernel (macOS, iOS)
 
 
 📌 വിവരണം:
+
 അത്യന്തം ചെറിയ kernel ആണ്.
 
 വളരെ താഴ്ന്ന ലെവലിൽ കുറച്ച് functionalities മാത്രം കൈകാര്യം ചെയ്യുന്നു (ഉദാ: Interrupts).
 
-🧪 ഉദാഹരണം:
-Minimal embedded systems
+Kernel‌ ൽ ഇടപെടുന്ന functionalities വളരെ കുറവാണ്.
 
+ഇത് പ്രധാനമായും basic hardware-level operations പോലുള്ള കാര്യങ്ങൾ മാത്രം കൈകാര്യം ചെയ്യുന്നു.
+
+ഉദാഹരണങ്ങൾ:
+
+Interrupt Handling
+
+Context Switching
+
+Basic Scheduling
+
+Low-level I/O operations
+
+🧪 ഉദാഹരണം: Minimal Embedded Systems
+
+➤ Minimal Embedded Systems എന്താണ്?
+ചുരുങ്ങിയ റിസോഴ്‌സുള്ള, task-specific systems.
+
+Example: Microwave oven controllers, simple digital watches, basic IoT sensors.
+
+ഇവയിൽ kernel‌ കൾ സാധാരണയായി super lightweight ആയിരിക്കും.
+
+ചിലത് bare-metal programming (without OS) ഉപയോഗിച്ചേക്കാം, അല്ലെങ്കിൽ tiny real-time kernels പോലുള്ളവ ഉപയോഗിക്കും.
 🖥️ Operating System Boot Process – Step by Step in Malayalam
 
 ✅ 1. Power ON → ROM പ്രവർത്തനം ആരംഭിക്കുന്നു
