@@ -50,6 +50,8 @@ Linux-ന്റെ എല്ലാം ഫയലുകളായി പരിഗ�
 /etc/passwd – യൂസർ വിവരങ്ങൾ
 
 /etc/fstab – mount info
+![Uploading image.png…]()
+
 
 /etc/hostname, /etc/network/interfaces
 
