@@ -283,6 +283,16 @@ cat file1.txt
 | 📥 Paste below              | `p`                 | Paste below the current line or cursor  |
 | 📥 Paste above              | `P`                 | Paste above the current line or cursor  |
 
+✅ Summary Table for Character Copy
+
+| Action                 | Vim Command           | Explanation                  |
+| ---------------------- | --------------------- | ---------------------------- |
+| Start char-wise select | `v`                   | Start selecting characters   |
+| Move right             | `l`, or `→` arrow key | Select characters one-by-one |
+| Copy                   | `y`                   | Yank selected characters     |
+| Paste                  | `p`                   | Paste after cursor           |
+| Paste before cursor    | `P`                   | Paste before cursor          |
+
 ---
 
 ## 💽 Linux Partition Management  
