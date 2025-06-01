@@ -165,7 +165,8 @@ Use man <command> to read manual pages, e.g., man cp.
 
 Screenshot for Create directory
 -----------------------------------------------------------
-step1: ![mkdir command execution](https://github.com/user-attachments/assets/a158dcc6-c53c-4940-b04d-b6666c49bd26)
+step1: 
+
 
 🧾 Command 1:
 
