@@ -309,7 +309,8 @@ step 2: i switch to  root user then execute "fdisk -l"
 
 step 3: fdisk /dev/sda
 ---
-![going to start partiton](https://github.com/user-attachments/assets/c1abd6fc-95c1-4a0e-b58c-5b9b6d5f1aed)
+![going to start partiton](https://github.com/user-attachments/assets/778bdf62-4acc-435c-8a43-3bc20175fff6)
+
 Why do we use this?
 | Purpose                      | Description                           |
 | ---------------------------- | ------------------------------------- |
