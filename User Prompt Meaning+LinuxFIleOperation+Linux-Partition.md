@@ -57,8 +57,9 @@ cd ..
 
 cd /etc/network
 
+✅To temporarily switch to root:
 
-
+sudo -i
 
 
 
