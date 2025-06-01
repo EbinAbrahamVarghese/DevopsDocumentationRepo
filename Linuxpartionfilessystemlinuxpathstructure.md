@@ -239,14 +239,25 @@ Step 3: Create empty file
 ![createnewfileandlistnewfile](https://github.com/user-attachments/assets/2140cc43-e295-4468-a8f5-fbd190f980ec)
 
   touch file1.txt
+  
 📌 Summary
+
 | Command                | Purpose                             | Result              |
 | ---------------------- | ----------------------------------- | ------------------- |
 | `touch file1.txt`      | Try to create file (as normal user) | ❌ Permission denied |
 | `sudo touch file1.txt` | Create file with root permission    | ✅ Success           |
 | `ls`                   | List files in the current directory | ✅ Shows `file1.txt` |
 
-  
+step 4 : going to open vim editor and add content
+
+![open vim editor and add content](https://github.com/user-attachments/assets/6cfd7a6d-19eb-4311-8861-c9f58f6e3d65)
+
+
+step 5: view content in a file
+
+![view content](https://github.com/user-attachments/assets/ebc4a113-ecf2-4b3b-acca-f6b4a611a58b)
+
+cat file1.txt
 ---
 
 ## 💽 Linux Partition Management  
