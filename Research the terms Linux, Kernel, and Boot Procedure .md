@@ -1,3 +1,5 @@
+🐧 Linux Essentials Guide
+
 Research the terms Linux, Kernel, and Boot Procedure
 
 🧩 സോഫ്റ്റ്‌വെയറിന്റെ രണ്ട് തരം:
