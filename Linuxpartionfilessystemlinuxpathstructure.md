@@ -342,6 +342,24 @@ step5 : finally new partion cretaed
 
 ![Finally new partion created](https://github.com/user-attachments/assets/b7045cd1-fbf6-4480-9f42-cd42638fb3ec)
 
+step 6: next i am going to crealte file system
+mkfs.ext4 /dev/sda3 or mkfs -t ext4 /dev/sda3
+ ![create filesystem](https://github.com/user-attachments/assets/a5ad6aaf-bebc-4990-8e24-f7f85faaa555)
+
+step 7: next i need to map to directory
+ mount /dev/sda3 /ebin
+![temprory mount my new directory to harddisk](https://github.com/user-attachments/assets/e3e37ef6-b83c-4e8a-9a88-fd698df5a7bd)
+
+step8: go and vim editor and add new file mapping in configuration file
+vim /etc/fstab
+![etcfstab](https://github.com/user-attachments/assets/0ad0391e-d693-4554-8f6e-2272d8c4e10c)
+
+step9:  we will execute (mount -a)
+finally my partition created permanently
+![finally permanently created mypartition](https://github.com/user-attachments/assets/08cfac99-5ef6-4311-8ab3-5dc1b6998029)
+
+
+
 
 
 
