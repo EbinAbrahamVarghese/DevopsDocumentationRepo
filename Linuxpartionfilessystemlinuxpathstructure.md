@@ -258,6 +258,31 @@ step 5: view content in a file
 ![view content](https://github.com/user-attachments/assets/ebc4a113-ecf2-4b3b-acca-f6b4a611a58b)
 
 cat file1.txt
+
+📝 Insert and Save
+
+| Action            | Command |
+| ----------------- | ------- |
+| Enter Insert mode | `i`     |
+| Save file         | `:w`    |
+| Quit Vim          | `:q`    |
+| Save & Quit       | `:wq`   |
+| Force Quit        | `:q!`   |
+
+
+ Vim Copy / Cut / Paste Summary Table
+
+ | Action                      | Vim Command         | Description                             |
+| --------------------------- | ------------------- | --------------------------------------- |
+| 📄 Copy (yank) current line | `yy`                | Copy the current line                   |
+| 📄 Copy N lines             | `Nyy` (e.g., `5yy`) | Copy N lines starting from current line |
+| 📄 Copy selection           | `v` → select → `y`  | Copy selected text in visual mode       |
+| ✂️ Cut (delete) line        | `dd`                | Cut (delete) the current line           |
+| ✂️ Cut N lines              | `Ndd` (e.g., `3dd`) | Cut N lines starting from current line  |
+| ✂️ Cut selection            | `v` → select → `d`  | Cut selected text in visual mode        |
+| 📥 Paste below              | `p`                 | Paste below the current line or cursor  |
+| 📥 Paste above              | `P`                 | Paste above the current line or cursor  |
+
 ---
 
 ## 💽 Linux Partition Management  
