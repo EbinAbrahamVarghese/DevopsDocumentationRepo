@@ -222,7 +222,8 @@ Now you’re allowed to create /ebin and /ebin/sample_folder under the root dire
 The -p ensures that if /ebin doesn't exist, it will be created too.
 
 
-step 2: ![list created ddirectory](https://github.com/user-attachments/assets/855aa256-7465-4998-aa7d-891f853cb317)
+step 2:
+
  ✅ 1. Using ls command
 
       ls /ebin
@@ -232,6 +233,8 @@ step 2: ![list created ddirectory](https://github.com/user-attachments/assets/85
 cd /ebin/sample_folder
 
 Then check your current location:
+![find current location](https://github.com/user-attachments/assets/27a475f5-cb68-4663-a71d-cdc344d8c744)
+
  pwd
 ---
 
