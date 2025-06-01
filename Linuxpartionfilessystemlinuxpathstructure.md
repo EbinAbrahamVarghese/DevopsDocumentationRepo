@@ -330,3 +330,19 @@ common option
 | `t`    | Change partition type         |
 | `w`    | Write changes to disk         |
 | `q`    | Quit without saving           |
+
+step4: i am going to create new partion
+![press n and create 250mb space](https://github.com/user-attachments/assets/5efe3b63-61c8-46c6-8d71-e9fe47da18d7)
+
+step 4 : press wq(write and quit)
+
+![wq](https://github.com/user-attachments/assets/3674a378-02f6-45aa-a7dc-084fe3b799da)
+
+step5 : finally new partion cretaed
+
+![Finally new partion created](https://github.com/user-attachments/assets/b7045cd1-fbf6-4480-9f42-cd42638fb3ec)
+
+
+
+
+
