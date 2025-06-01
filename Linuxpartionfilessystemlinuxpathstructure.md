@@ -169,6 +169,7 @@ step1:
 
 
 🧾 Command 1:
+![mkdir command execution](https://github.com/user-attachments/assets/3d68bded-eb40-420b-b64f-402756060c39)
 
 mkdir /ebin/sample_folder
 
@@ -218,6 +219,7 @@ The -p ensures that if /ebin doesn't exist, it will be created too.
 
 
 step 2:
+![list created ddirectory](https://github.com/user-attachments/assets/43c4632e-14d2-4719-84a1-66bd5a74a5c4)
 
  ✅ 1. Using ls command
 
@@ -229,6 +231,7 @@ cd /ebin/sample_folder
 
 Then check your current location:
 
+![find current location](https://github.com/user-attachments/assets/a14f6207-d794-45c0-a6ec-bb6617b11faf)
 
  pwd
 ---
