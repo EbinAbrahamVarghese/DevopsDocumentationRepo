@@ -234,6 +234,19 @@ Then check your current location:
 ![find current location](https://github.com/user-attachments/assets/a14f6207-d794-45c0-a6ec-bb6617b11faf)
 
  pwd
+
+Step 3: Create empty file 
+![createnewfileandlistnewfile](https://github.com/user-attachments/assets/2140cc43-e295-4468-a8f5-fbd190f980ec)
+
+  touch file1.txt
+📌 Summary
+| Command                | Purpose                             | Result              |
+| ---------------------- | ----------------------------------- | ------------------- |
+| `touch file1.txt`      | Try to create file (as normal user) | ❌ Permission denied |
+| `sudo touch file1.txt` | Create file with root permission    | ✅ Success           |
+| `ls`                   | List files in the current directory | ✅ Shows `file1.txt` |
+
+  
 ---
 
 ## 💽 Linux Partition Management  
