@@ -233,7 +233,7 @@ step 2:
 cd /ebin/sample_folder
 
 Then check your current location:
-![find current location](https://github.com/user-attachments/assets/27a475f5-cb68-4663-a71d-cdc344d8c744)
+!(https://github.com/user-attachments/assets/27a475f5-cb68-4663-a71d-cdc344d8c744)
 
  pwd
 ---
