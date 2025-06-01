@@ -298,5 +298,34 @@ cat file1.txt
 ## 💽 Linux Partition Management  
 Master partitioning, mounting, and managing storage devices in Linux.
 
----
+step1 : check partion details
+![print partiondetails](https://github.com/user-attachments/assets/0ac47785-1253-4ce3-a465-69371152bd25)
 
+df -h
+
+step 2: i switch to  root user then execute "fdisk -l"
+
+![diskdetails](https://github.com/user-attachments/assets/e9dccd8f-9178-42be-8225-42283152b7e0)
+
+step 3: fdisk /dev/sda
+---
+![going to start partiton](https://github.com/user-attachments/assets/c1abd6fc-95c1-4a0e-b58c-5b9b6d5f1aed)
+Why do we use this?
+| Purpose                      | Description                           |
+| ---------------------------- | ------------------------------------- |
+| View partition table         | See how the disk is divided           |
+| Create a new partition       | Allocate unused space for new storage |
+| Delete an existing partition | Remove a partition                    |
+| Change partition type        | E.g., from Linux to swap              |
+| Write changes to disk        | Save and apply your changes           |
+
+common option
+| Option | Action                        |
+| ------ | ----------------------------- |
+| `m`    | Help (list all commands)      |
+| `p`    | Print current partition table |
+| `n`    | Create a new partition        |
+| `d`    | Delete a partition            |
+| `t`    | Change partition type         |
+| `w`    | Write changes to disk         |
+| `q`    | Quit without saving           |
