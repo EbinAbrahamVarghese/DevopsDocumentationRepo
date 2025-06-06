@@ -55,6 +55,9 @@ cd /etc/network
 
 sudo -i
 
+✅To temporarily switch  root to noroot:
+
+sudo -u dev -i
 
 
 
@@ -67,6 +70,10 @@ Learn how to create, move, copy, delete, and manage files like a pro.
 📂 Create a new directory
 
 mkdir /ebin/my_folder
+
+📂remove directory
+sudo rm -rf path
+
 
 📝 Create file with content
 
