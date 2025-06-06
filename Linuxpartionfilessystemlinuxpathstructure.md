@@ -354,7 +354,7 @@ mkfs.ext4 /dev/sda3 or mkfs -t ext4 /dev/sda3
  ![create filesystem](https://github.com/user-attachments/assets/a5ad6aaf-bebc-4990-8e24-f7f85faaa555)
 
 step 7: next i need to map to directory
- mount /dev/sda3 /ebin
+ mount /dev/sda3  /ebin
 ![temprory mount my new directory to harddisk](https://github.com/user-attachments/assets/e3e37ef6-b83c-4e8a-9a88-fd698df5a7bd)
 
 step8: go and vim editor and add new file mapping in configuration file
