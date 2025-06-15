@@ -52,6 +52,12 @@ Remove manually from /etc/group
 groups username
 
 
+🔹 List Groups 
+
+getent group or cat /etc/group
+
+
+
 🔧 4. Modify User Info
 
 
