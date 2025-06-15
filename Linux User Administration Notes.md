@@ -252,5 +252,20 @@ Run:
 
 backup.sh
 
+Set Password Aging Policy for devuser1
+
+sudo chage -m 2 -M 45 -W 7 devuser1
+
+
+| Option  | Meaning                                             |
+| ------- | --------------------------------------------------- |
+| `-m 2`  | Minimum 2 days before password can be changed again |
+| `-M 45` | Maximum 45 days before password expires             |
+| `-W 7`  | Show warning 7 days before password expires         |
+
+
+ Step 3: Verify the Policy
+
+ sudo chage -l devuser1
 
 
