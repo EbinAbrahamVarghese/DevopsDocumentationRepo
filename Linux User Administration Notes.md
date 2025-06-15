@@ -171,3 +171,80 @@ sudo chown -R alice:teamA /home/project/
 | View ownership       | `ls -l`                              |
 
 
+
+
+🐚 Linux: Shell Change & Copying Shell Script File – Explained Clearly
+
+🔁 1. Change Default Shell for a User
+
+🔹 Check available shells:
+
+cat /etc/shells
+
+
+🔹 View current shell:
+
+echo $SHELL
+
+🔹 Change shell for current user:
+
+chsh -s /bin/bash          # or /bin/zsh, /bin/sh, etc.
+
+
+🔹 Change shell for another user:
+
+sudo chsh -s /bin/bash username
+
+
+📄 2. Copy a Shell Script File
+
+
+🔹 Syntax:
+
+
+cp source_path target_path
+
+
+🔹 Example:
+
+
+cp myscript.sh /usr/local/bin/
+
+
+🔹 Make it executable:
+
+
+chmod +x /usr/local/bin/myscript.sh
+
+
+
+🧪 Example Workflow:
+
+Create script:
+
+nano backup.sh
+
+
+Add content:
+
+#!/bin/bash
+
+echo "Backup started..."
+
+
+Make it executable:
+
+
+chmod +x backup.sh
+
+Copy to bin:
+
+sudo cp backup.sh /usr/local/bin/
+
+
+Run:
+
+backup.sh
+
+
+
