@@ -269,3 +269,50 @@ sudo chage -m 2 -M 45 -W 7 devuser1
  sudo chage -l devuser1
 
 
+ ✅ 1. Set Account Expiry Date (15 days from today)
+
+ sudo chage -E $(date -d "+15 days" +%F) devuser2
+
+
+🔍 What it does:
+
+chage -E: Sets the account expiration date.
+
+
+$(date -d "+15 days" +%F): Dynamically calculates the date 15 days from today in YYYY-MM-DD format.
+
+
+devuser2: The target username.
+
+
+
+
+✅ 2. Lock the Account Temporarily
+
+
+sudo usermod -L devuser2
+
+
+🔍 What it does:
+
+usermod -L: Locks the account (disables password-based login).
+
+
+🔒 The account is locked but not deleted. You can unlock it later using sudo usermod -U devuser2.
+
+
+✅ Verify the Settings
+
+
+Check expiry date
+
+
+sudo chage -l devuser2
+
+
+Check if account is locked:
+
+
+sudo passwd -S devuser2
+
+
