@@ -119,5 +119,44 @@ sudo apt --fix-broken install
 
 
 
+📚 curl Usage (Debian/Ubuntu/Linux)
+
+✅ What is curl?
+
+👉 curl is a command-line tool to transfer data to or from a server
+
+👉 It supports many protocols: HTTP, HTTPS, FTP, SFTP, etc.
+
+
+👉 Mostly used to:
+
+
+Download files
+
+Test APIs
+
+Send GET/POST requests
+
+
+✅ Basic Syntax
+
+
+curl [options] <URL>
+
+
+✅ Simple Examples
+
+
+| **Action**                        | **Command**                                                       |
+| --------------------------------- | ----------------------------------------------------------------- |
+| 1. Download a webpage             | `curl https://example.com`                                        |
+| 2. Save output to a file          | `curl -o myfile.html https://example.com`                         |
+| 3. Follow redirects               | `curl -L https://example.com`                                     |
+| 4. Download a file                | `curl -O https://example.com/file.zip`                            |
+| 5. Send GET request (API)         | `curl https://api.example.com/data`                               |
+| 6. Send POST request (API)        | `curl -X POST -d "param1=value1" https://api.example.com/post`    |
+| 7. Add headers (example: API key) | `curl -H "Authorization: Bearer <token>" https://api.example.com` |
+| 8. Check response headers only    | `curl -I https://example.com`                                     |
+
 
 
