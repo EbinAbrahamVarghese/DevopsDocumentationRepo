@@ -316,3 +316,83 @@ Check if account is locked:
 sudo passwd -S devuser2
 
 
+✅ 1️⃣ What are Linux file permissions?
+
+
+Every file/folder in Linux has permissions — which tell:
+
+
+Who can read it
+
+
+Who can write (modify) it
+
+
+
+Who can execute (run) it
+
+
+✅ 2️⃣ Three types of users:
+
+
+| Symbol | Who?                   |
+| ------ | ---------------------- |
+| u      | user (owner)           |
+| g      | group                  |
+| o      | others (everyone else) |
+
+
+✅ 3️⃣ Three types of permissions:
+
+
+| Symbol | Permission | Meaning               |
+| ------ | ---------- | --------------------- |
+| r      | read       | View content          |
+| w      | write      | Modify content        |
+| x      | execute    | Run as program/script |
+
+
+✅ 4️⃣ Permission format
+
+
+ls -l
+
+
+You see:
+
+-rwxr-xr-x  1  owner  group  file.txt
+
+
+Breakdown:
+
+| Position | Meaning           |
+| -------- | ----------------- |
+| rwx      | user permissions  |
+| r-x      | group permissions |
+| r-x      | other permissions |
+
+
+✅ 5️⃣ Numeric permission (octal) — like 755, 644
+
+| Number | Meaning                      | rwx equivalent |
+| ------ | ---------------------------- | -------------- |
+| 7      | read + write + execute (rwx) |                |
+| 6      | read + write (rw-)           |                |
+| 5      | read + execute (r-x)         |                |
+| 4      | read only (r--)              |                |
+| 0      | no permission (---)          |                |
+
+
+✅ 6️⃣ Common permissions:
+
+| Number  | Meaning                              |
+| ------- | ------------------------------------ |
+| **755** | user: rwx, group: r-x, others: r-x   |
+| **644** | user: rw-, group: r--, others: r--   |
+| **700** | user: rwx, group: ---, others: ---   |
+| **777** | everyone can do anything (rwxrwxrwx) |
+
+
+
+
+
