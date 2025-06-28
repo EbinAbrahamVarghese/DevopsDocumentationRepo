@@ -54,5 +54,19 @@ Find lines containing either "Sales" or "HR" using -E
 
 grep -E 'Sales|HR' employees.txt
 
+ Summary table
+ 
+
+ | Command                 | What it does                   |                            |
+| ----------------------- | ------------------------------ | -------------------------- |
+| `grep 'Sales'`          | Lines with "Sales"             |                            |
+| `grep -v 'Sales'`       | Lines without "Sales"          |                            |
+| `grep '^A'`             | Lines starting with "A"        |                            |
+| `grep '0$'`             | Lines ending with "0"          |                            |
+| `grep -c 'Engineering'` | Count lines with "Engineering" |                            |
+| `grep -i 'marketing'`   | Case-insensitive search        |                            |
+| `grep -n 'Sales'`       | Show line numbers with "Sales" |                            |
+| \`grep -E 'Sales        | HR'\`                          | Lines with "Sales" or "HR" |
+
 
 
