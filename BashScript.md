@@ -5,6 +5,7 @@ Scripts are just text files with commands.
 To create:
 
 #!/bin/bash
+
 echo "Hello, World!"
 
 
@@ -66,35 +67,50 @@ Operators
 For loop
 
 for i in 1 2 3 4 5
+
 do
+
   echo "Number $i"
+  
 done
 
 
 For loop with C-style
 
 for ((i=1; i<=5; i++))
+
 do
+
   echo "Number $i"
+  
 done
 
 
 While loop
 
 count=1
+
 while [ $count -le 5 ]
+
 do
+
   echo "Count $count"
+  
   ((count++))
+  
 done
 
 Until loop
 
 num=1
 until [ $num -gt 5 ]
+
 do
+
   echo "Until $num"
+  
   ((num++))
+  
 done
 
 
@@ -103,14 +119,23 @@ done
 read -p "Enter a character: " char
 
 case $char in
+
   [a-z])
+  
     echo "Lowercase letter";;
+    
   [A-Z])
+  
     echo "Uppercase letter";;
+    
   [0-9])
+  
     echo "Digit";;
+    
   *)
+  
     echo "Other character";;
+    
 esac
 
 
@@ -118,13 +143,20 @@ esac
 
 
 fruits=("apple" "banana" "cherry")
+
 echo "${fruits[0]}"      # apple
+
 echo "${fruits[@]}"      # all elements
 
+
 # Iterate
+
 for fruit in "${fruits[@]}"
+
 do
+
   echo "$fruit"
+  
 done
 
 
@@ -132,22 +164,30 @@ done
 🟢 7️⃣ Functions (like methods)
 
 greet() {
+
   echo "Hello, $1!"
+  
 }
 
 greet "Alice"
 
 outside source filename.sh...ect
+
  then greet Ebin
 
 🟢 8️⃣ Command line arguments
 
 
 #!/bin/bash
+
 echo "Script name: $0"
+
 echo "First arg: $1"
+
 echo "Second arg: $2"
+
 echo "Total args: $#"
+
 echo "All args: $@"
 
 
@@ -155,5 +195,45 @@ echo "All args: $@"
 🟢 9️⃣ Reading user input
 
 read -p "Enter your name: " username
+
 echo "Hello $username"
 
+
+🟢 🔟 File operations
+
+if [ -f myfile.txt ]; then
+
+  echo "File exists"
+  
+else
+
+  echo "File does not exist"
+  
+fi
+
+
+Read file line by line
+
+while read line
+
+do
+
+  echo "$line"
+  
+done < myfile.txt
+
+
+
+🟢 1️⃣1️⃣ Exit status
+
+cp file1.txt /some/folder
+
+if [ $? -eq 0 ]; then
+
+  echo "Copy succeeded"
+  
+else
+
+  echo "Copy failed"
+  
+fi
