@@ -237,3 +237,41 @@ else
   echo "Copy failed"
   
 fi
+
+
+Assignment
+----------------------
+#!/bin/bash
+
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    distro=$ID
+else
+    echo "Cannot determine Linux distribution."
+    exit 1
+fi
+
+case $distro in
+    ubuntu|debian)
+        echo "Debian-based system detected."
+        sudo apt update
+        sudo apt install -y curl
+        ;;
+    rhel|centos|fedora)
+        echo "RedHat-based system detected."
+        sudo yum install -y curl
+        ;;
+    alpine)
+        echo "Alpine system detected."
+        sudo apk add --no-cache curl
+        ;;
+    *)
+        echo "Distro not identified" >&2
+        exit 1
+        ;;
+esac
+
+echo "curl installation completed successfully."
+
+
+
